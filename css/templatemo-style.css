@@ -1,10 +1,4 @@
-/*
 
-Stimulus Template
-
-http://www.templatemo.com/tm-498-stimulus
-
-*/
 
 body {
 	background: #ffffff;
@@ -394,7 +388,7 @@ a {
 
 #about .about-img {
     background: url('../images/portfolio_img2.jpg') no-repeat;
-
+		height: 100vh;
 
 }
 
@@ -442,8 +436,10 @@ list-style: none;
 flex-wrap: wrap;
 justify-content: space-between;
 flex-direction: row;
+}
 
-
+#about p{
+	color: #667379 ;
 }
 /*---------------------------------------
     Service section
@@ -472,6 +468,26 @@ flex-direction: row;
 overflow: hidden;
 
 
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+		background-color: #f1e2d7;
+    -webkit-animation: fadeEffect 2s;
+    animation: fadeEffect 2s;
+
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 
@@ -715,6 +731,8 @@ padding-right: 1em;
     position: relative;
     min-height: 65vh;
   }
+
+
 
 }
 

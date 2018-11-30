@@ -53,7 +53,6 @@
                     <li><a href="#home" class="smoothScroll">Home</a></li>
                     <li><a href="#about" class="smoothScroll">About Me</a></li>
                     <li><a href="#service" class="smoothScroll">Work</a></li>
-                    <!-- <li><a href="#quotes" class="smoothScroll">Testimonial</a></li> -->
                     <li><a href="#contact" class="smoothScroll">Contact</a></li>
                </ul>
           </div>
@@ -117,7 +116,7 @@
                               <p>After years of working in many different service industries, I had found myself constantly finding that
                                  the programs we used were not solving the problems it was meant to target or held inefficient results.
                                  I became curious and empatheic to live feedback and interaction with our clients, which eventually pushed me to
-                                 learning front end and UI/UX on my own. It was a great way to put myself in the customer's shoes and wear the
+                                 learn front end and UI/UX on my own. It was a great way to put myself in the customer's shoes and wear the
                                  developer's hat.</p>
                                 <p> In 2018, I had decided to go to Digital Crafts to develop my full-stack technical skills.
                                   Currently, I am looking to be part of a creative and problem solving team. </p>
@@ -187,25 +186,78 @@
 <!-- Service Section -->
 
 <section id="service" class="parallax-section">
-     <div class="container tab">
+     <div class="container ">
           <div class="row">
 
-               <div class="bg-yellow col-md-3 col-sm-6 ">
+             <div class="tab">
+
+              <div class="bg-yellow col-md-3 col-sm-6 tab">
+              <div class="wow fadeInUp color-white service-thumb" data-wow-delay="0.8s">
+              <a class="tablinks color-white" onclick="openTab(event,'Projects')"> <i class="fa fa-desktop"></i>
+              <h3>Projects</h3></a>
+            </div></div>
+
+            <div class="col-md-3 col-sm-6">
+            <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.2s">
+            <a class="Interactive-btn tablinks color-white" onclick="openTab(event,'Interactive')" > <i class="fa fa-paper-plane"></i>
+            <h3>Interactive</h3></a>
+          </div></div>
+
+            <div class="bg-dark col-md-3 col-sm-6">
+            <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.6s">
+            <a class="tablinks color-white" onclick="openTab(event,'Photography')"><i class="fa fas fa-camera-retro "></i>
+            <h3>Photography</h3></a>
+          </div></div>
+
+            <div class="bg-white col-md-3 col-sm-6">
+            <div class="wow fadeInUp service-thumb" data-wow-delay="1.8s">
+            <a class="tablinks" onclick="openTab(event,'Logos')"><i class="fa fas fa-paint-brush"></i>
+            <h3>Logos</h3></a>
+          </div></div>
+
+            </div>
+
+            <div id="Projects" class="tabcontent">
+              <h3>My Work</h3>
+              <p> <a href="https://patientcaredb.herokuapp.com" target="_blank">PatientCareDB</a> </p>
+              <p><a href=" https://dc-pick-and-choose.herokuapp.com/index.html?fbclid=IwAR23-l2WnXrWUUOmgUJ-Ruie0U-qHgZoUK1mMscWdWlnLA3GMVUL4mxJfVA " target="_blank">Date night out randomizer</a><ul>
+                <li>Responsive</li>
+                <li>Encrypted user login</li>
+              </ul>
+            </div>
+
+            <div id="Interactive" class="tabcontent">
+              <h3>Play Time!</h3>
+              <p><a href="spaceinvader.html" target="_blank" class="smoothScroll">Game Placeholder</a></p>
+            </div>
+
+            <div id="Photography" class="tabcontent">
+              <h3>Photography</h3>
+              <p></p>
+            </div>
+
+            <div id="Logos" class="tabcontent">
+              <h3>Logos</h3>
+              <p></p>
+            </div>
+
+
+               <!-- <div class="bg-yellow col-md-3 col-sm-6 tab">
                     <div class="wow fadeInUp color-white service-thumb" data-wow-delay="0.8s">
-                        <a href="https://patientcaredb.herokuapp.com" class="color-white"> <i class="fa fa-desktop"></i>
-                            <h3 class="tablinks" onclick="openContent(event,'Projects')">Projects</h3></a>
+                        <a href="#Projects_content" class="color-white"> <i class="fa fa-desktop"></i>
+                            <h3 class="tablinks" onclick="openContent(event,'Projects')">Projects</h3></a> -->
 
 
                               <!--  <a href="https://patientcaredb.herokuapp.com">PatientCareDB</a> -->
 
 
 <!-- https://dc-pick-and-choose.herokuapp.com/index.html?fbclid=IwAR23-l2WnXrWUUOmgUJ-Ruie0U-qHgZoUK1mMscWdWlnLA3GMVUL4mxJfVA -->
-                    </div>
+                    <!-- </div>
                </div>
 
                <div class="col-md-3 col-sm-6">
                     <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.2s">
-                        <a href="spaceinvader.html" target="_blank" class="color-white"> <i class="fa fa-paper-plane"></i>
+                        <a href="#Interactive_content" class="color-white"> <i class="fa fa-paper-plane"></i>
                               <h3 class="tablinks" onclick="openContent(event,'Interactive')">Interactive</h3></a>
 
                     </div>
@@ -213,7 +265,7 @@
 
                <div class="bg-dark col-md-3 col-sm-6">
                     <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.6s">
-                         <a href="#" class="color-white"><i class="fa fas fa-camera-retro "></i>
+                         <a href="#Photography_content" class="color-white"><i class="fa fas fa-camera-retro "></i>
                               <h3 class="tablinks" onclick="openContent(event,'Photography')">Photography</h3></a>
 
                     </div>
@@ -221,15 +273,35 @@
 
                <div class="bg-white col-md-3 col-sm-6">
                     <div class="wow fadeInUp service-thumb" data-wow-delay="1.8s">
-                         <a href="#"><i class="fa fas fa-paint-brush"></i>
-                              <h3 class="tablinks" onclick="openContent(event,'Logos')">Logos</h3></a>
+                         <a href="#Logo_content"><i class="fa fas fa-paint-brush"></i>
+                              <h3 class="tablinks" onclick="openTab(event,'Logos')">Logos</h3></a>
 
                     </div>
                </div>
 
           </div>
+
+          <div id="Projects_content" class="tabcontent">
+            <h2>Front End | Backend</h2>
+            <p>London is the capital city of England.</p>
+          </div>
+
+          <div id="Interactive_content" class="tabcontent">
+            <h2>Interactive</h2>
+            <p>Paris is the capital of France.</p>
+          </div>
+
+          <div id="Photography_content" class="tabcontent">
+            <h2>Photography</h2>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+          <div id="Logo_content" class="tabcontent">
+            <h2>Logos</h2>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+
      </div>
-</section>
+</section>-->
 
 
 <!-- Experience Section -->
@@ -332,7 +404,7 @@
                <div class="col-md-offset-1 col-md-10 col-sm-12">
                     <i class="wow fadeInUp  data-wow-delay="0.6s"></i>
                     <h2 class="wow fadeInUp" data-wow-delay="0.8s">The perfect fit for your team</h2>
-                    <p>Four <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> Aqui Houston family</p>
+                    <p>Four star Aqui Houston family</p>
                </div>
 
           </div>
